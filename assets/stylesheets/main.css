@@ -1,0 +1,73 @@
+body {
+    background: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/sayagata-400px.png");
+    font: 1.2em "PT Sans", Tahoma, Arial;
+    text-transform: uppercase;
+}
+
+.nav {
+    display: block;
+    list-style: none;
+    margin: 30px;
+    padding: 0;
+}
+
+.nav li {
+    height: 64px;
+    overflow: hidden;
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out 0.2s;
+    width: 74px;
+}
+
+.nav li:hover {
+    height: 155px;
+    width: 200px;
+}
+
+.nav li a {
+    background: #bbb;
+    color: black;
+    cursor: pointer;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    margin: 1px;
+    padding-left: 5px;
+    transition: background .2s ease-in-out;
+    width: 150px;
+}
+
+.nav li a:first-child {
+    font-size: 1.2em;
+    height: 65px;
+    line-height: 65px;
+    position: relative;
+    text-indent: 66px;
+}
+
+.nav li a:first-child::before {
+    content: "";
+    display: block;
+    height: 64px;
+    position: absolute;
+    width: 64px;
+}
+
+.nav li a:hover {
+    background: #2fc5ff;
+}
+
+.submenu1 a:first-child::before {
+    background: url("../img/Home-64.png") center no-repeat;
+}
+
+.submenu2 a:first-child::before {
+    background: url("../img/Link-64.png") center no-repeat;
+}
+
+.submenu3 a:first-child::before {
+    background: url("../img/Search-64.png") center no-repeat;
+}
+
+.submenu4 a:first-child::before {
+    background: url("../img/Settings-64.png") center no-repeat;
+}
